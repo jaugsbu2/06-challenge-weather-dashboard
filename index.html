@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -13,18 +13,19 @@
     <header>
         <h1 class="header">Weather Dashboard</h1>
     </header>
-    <main class="flex-row">
-        <div class="col-12 col-md-3 form justify-space-between">
-            <h2>Search for a City:</h2>
-            <form id="city-form">
-                <input id="city" name="city" type="text">
+
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-3">
+            <form id="city-form" class="form-body">
+                <label for="city" class="form-label"> Input a City</label>
+                <input id="city" name="city" type="text" class="form-input" autofocus="true"/>
                 <button type="submit" class="btn">Search</button>
             </form>
             <div id="cities"></div>
         </div>
         <div class="col-12 col-md-9" id="city-header">
             <div id="todayContainer"></div>
-            <div id="futureContainer"></div>
+            <div id="futureContainer" class="flex-row justify-flex-start"></div>
         </div>
         <script src="assets/js/script.js"></script>
     </main>

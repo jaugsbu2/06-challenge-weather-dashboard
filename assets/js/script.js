@@ -17,11 +17,13 @@ var rendercities = function () {
     var searchHistoryEl = document.createElement('h2')
     searchHistoryEl.textContent = 'Select a City';
     citiesDivEl.appendChild(searchHistoryEl)
+    citiesDivEl.setAttribute('class', 'city-choice')
     cities = JSON.parse(localStorage.getItem("cities"));
     for (var i = 0; i < cities.length; i++) {
       var cityNameEl = document.createElement('button')
       cityNameEl.textContent = cities[i].name;
       cityNameEl.setAttribute('city', cities[i].name)
+      cityNameEl.setAttribute('class', 'btn');
       citiesDivEl.appendChild(cityNameEl)
     }
     for (i = 0; i < cities.length; i++) {

@@ -108,7 +108,7 @@ if (city) {
 }
 
 var getCoordinates = function (city) {
-  var apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=e13ba5f8bf833f93245d6a975e33cb8f'
+  var apiUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=e13ba5f8bf833f93245d6a975e33cb8f'
 
   fetch(apiUrl)
     .then(function (response) {
@@ -147,7 +147,7 @@ var getCoordinates = function (city) {
 
 var getWeather = function (lat, lon) {
 
-  var apiUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e13ba5f8bf833f93245d6a975e33cb8f'
+  var apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=e13ba5f8bf833f93245d6a975e33cb8f'
 
   fetch(apiUrl)
     .then(function (response) {

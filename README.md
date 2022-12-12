@@ -1,10 +1,10 @@
 # Weather Dashboard
 
-![start-screen](/assets/images/work-day-scheduler-img.png)
+![start-screen](/assets/images/weatherdashboard.png)
 
 ## Description
 
-This is a website to search for a city and display the weather for that city
+This is a website to search for a city and display the weather for that city. It stores all searched cities with valid results to local storage making it easy to get the weather of previously searched cities. 
 
 ## Installation
 
